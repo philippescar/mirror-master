@@ -23,7 +23,7 @@ The default variables are environments variables that can be used to configure t
 | DEST_REGISTRY    | Destination Registry where the images will be copied.                                                                                                                |    YES     |
 | DEST_AUTH_PWD    | Destination Registry password if needed.                                                                                                                             |     NO     |
 | DEST_AUTH_USER   | Destination Registry username if needed.                                                                                                                             |     NO     |
-| IGNORED_TAGS     | Tags from the source registry that should be ignored, the tags need to be declared like: `IGNORED_TAGS="alpine|beta|dev|latest|rc|lts|perl|mainline|stable|py2|py3"` |    YES     |
+| IGNORED_TAGS     | Tags from the source registry that should be ignored, the tags need to be declared separate by a pipe |    YES     |
 | SOURCE_REGISTRY  | Source Registry from where the images will be copied.                                                                                                                |    YES     |
 | SOURCE_AUTH_PWD  | Source Registry password if needed.                                                                                                                                  |     NO     |
 | SOURCE_AUTH_USER | Destination Registry username if needed.                                                                                                                             |     NO     |
