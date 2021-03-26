@@ -55,8 +55,7 @@ echo -e "\n Source Registry: $source_registry \n Destination Registry: $dest_reg
 
 # Function
 function copy_image() {
-    echo -e "\nCopying the image $i:$n"
-    skopeo copy --insecure-policy --all -q docker://$source_registry/$i:$n docker://$dest_registry/$i:$n
+    skopeo sync --all --src docker --dest docker $source_registry/$i:$n $dest_registry/
 }
 
 # Interaction through images
